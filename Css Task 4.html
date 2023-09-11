@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidenav Bar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: fixed;
+            z-index: 999;
+            top: 30%;
+            left: 0;
+            height: auto;
+            width: auto;
+        }
+        .facebook, .twitter, .instagram, .youtube{
+            height: 40px;
+            width: 100px;
+            position: absolute;
+            left: -80px;
+            top: 0%;
+            background-color: blue;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            transition: left 0.5s;
+
+        }
+        .container>:hover{
+            left: 0px;
+        }
+        .twitter{
+            background-color: aquamarine;
+            top: 45%;
+        }
+        .instagram{
+            background-color: orange;
+            top: 90px;
+        }
+        .youtube{
+            background-color: violet;
+            top: 135px;
+
+        }
+        a{
+            font-size: 22px;
+            font-family: chiller;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoverable Sidenav Bar</h1>
+    <h3>Hover all the button to open on the left side</h3>
+    <div class="container">
+        <div class="facebook"><a href="#">Facebook</a></div>
+        <div class="twitter"><a href="#">Twitter</a></div>
+        <div class="instagram"><a href="#">Instagram</a></div>
+        <div class="youtube"><a href="#">Youtube</a></div>
+    </div>
+    
+</body>
+</html>
+
