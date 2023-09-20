@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Submit form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+
+                <label for="hobbies">Choose Hobbie:</label>
+
+                <select name="hobbies" id="hobbies">
+                    <option value="--select hobbie--">Select Hobbie</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="rugby">Rugby</option>
+                    <option value="tennis">Tennis</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>  
