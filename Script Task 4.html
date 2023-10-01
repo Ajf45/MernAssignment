@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Date</title>
+    <script>
+        function displayDate() {
+            document.getElementById("showDate").innerHTML = Date();
+        }
+
+        function displayTime() {
+            document.getElementById("showTime").innerHTML = Time();
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="displayDate()">Show Date</button>
+    <p id="showDate">Sun 1st October</p>
+
+    <button type="button" onclick="displayTime()">Show Time</button>
+    <p id="showTime">11:59 am (Indian Standard Time)</p>
+</body>
+</html>
+
+
+
